@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - My Portfolio</title>
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+    
+  <script type="module" crossorigin src="/assets/index-BGbtx5s2.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-tn0RQdqM.css">
+</head>
+
+<body>
+
+    ﻿
+
+
+<style>
+    body {
+        padding-top: 80px; /* adjust based on navbar height */
+    }
+
+    .navbar {
+        background-color: #000000 !important;
+    }
+    .nav-link {
+        color: #f4a6a6 !important /* white */
+    }
+
+    
+
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(12px);
+    }
+    #home {
+        margin-top: 100px;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* 🌙 Dark Theme (default) */
+    body {
+        background: #050816;
+        color: white;
+        font-family: Segoe UI;
+    }
+
+        /* 🌞 Light Mode */
+        body.light-mode {
+            background: #ffffff !important;
+            color: #000000 !important;
+        }
+
+    /* ✨ Particles */
+    #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    /* Gradient text */
+    .text-gradient {
+        background: linear-gradient(90deg,#6c63ff,#9f6bff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Profile picture */
+    .profile-picture {
+        width: 260px;
+        border-radius: 50%;
+        border: 5px solid #6c63ff;
+        box-shadow: 0 0 25px #6c63ff;
+    }
+
+    /* Button */
+    .btn-gradient {
+        background: linear-gradient(45deg,#6c63ff,#9f6bff);
+        border: none;
+        color: white;
+    }
+
+    /* 🧊 3D Cards */
+    .card {
+        background: #0f172a;
+        border: none;
+        border-radius: 15px;
+        transition: 0.4s;
+        transform-style: preserve-3d;
+    }
+
+        .card:hover {
+            transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+            box-shadow: 0 10px 30px rgba(108,99,255,0.4);
+        }
+
+    /* Titles */
+    .section-title {
+        font-weight: 700;
+        color: #7c7cff;
+    }
+
+    /*css for project section*/
+    /* Section */
+    .projects-section {
+        padding: 60px 20px;
+        color: white;
+    }
+
+    /* Title */
+    .title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    /* Grid */
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    /* Card */
+    .project-card {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 15px;
+        transition: 0.3s;
+    }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Hover */
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(139,92,246,0.5);
+        }
+
+    /* Tags */
+    .tags span {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 5px 5px 10px 0;
+        background: #334155;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+
+    /* Buttons */
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+        .buttons button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+    /* Button styles */
+    /* .live {
+        background: linear-gradient(135deg, #8b5cf6, #6366f1);
+        color: white;
+    } */
+
+    .github {
+        background: linear-gradient(135deg, #8b5cf6, #6366f1);
+        border: 1px solid #555;
+        color: white;
+    }
+
+    /* Section */
+    .achievements {
+        padding: 60px 20px;
+        color: white;
+    }
+
+    /* Subtitle */
+    .subtitle {
+        letter-spacing: 2px;
+        color: #8b5cf6;
+        font-size: 14px;
+    }
+
+    /* Title */
+    .title {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    /* Grid */
+    .achievement-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+
+    /* Card */
+    .card {
+        background: #1e293b;
+        padding: 25px;
+        border-radius: 20px;
+        transition: 0.3s;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 25px rgba(139,92,246,0.5);
+        }
+
+    /* Header */
+    .card-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+    }
+
+    .icon {
+        font-size: 25px;
+    }
+
+    .card-header h3 {
+        margin: 0;
+    }
+
+    .card-header p {
+        margin: 0;
+        font-size: 14px;
+        opacity: 0.7;
+    }
+
+    /* Badge */
+    .badge {
+        position: absolute;
+        right: 0;
+        background: #312e81;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+
+    /* Date */
+    .date {
+        margin: 15px 0;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+
+    /* Description */
+    .desc {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    /* Skill Boxes */
+    .skills-box {
+        display: flex;
+        gap: 10px;
+    }
+
+        .skills-box div {
+            flex: 1;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            background: linear-gradient(135deg, #3b82f6, #6366f1);
+        }
+
+        .skills-box.orange div {
+            background: linear-gradient(135deg, #f59e0b, #f97316);
+        }
+
+        .skills-box b {
+            display: block;
+            font-size: 18px;
+        }
+
+        .skills-box span {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+    .skill-box img {
+        width: 50px;
+        height: 50px; /* 🔥 force same size */
+        object-fit: contain; /* keeps ratio */
+        margin-bottom: 10px;
+    }
+
+    /* Section */
+    .contact-section {
+        padding: 70px 20px;
+        color: white;
+    }
+
+    /* Subtitle */
+    .subtitle {
+        color: #8b5cf6;
+        letter-spacing: 2px;
+        font-size: 13px;
+    }
+
+    /* Title */
+    .title {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    /* Grid */
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+
+    /* Card */
+    .contact-card {
+        padding: 30px;
+        border-radius: 20px;
+        background: linear-gradient(145deg, #0f172a, #1e293b);
+        border: 1px solid rgba(255,255,255,0.08);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+        /* Glow effect */
+        .contact-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at top left, currentColor, transparent 70%);
+            opacity: 0.15;
+        }
+
+        /* Hover */
+        .contact-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 0 30px currentColor;
+        }
+
+    /* Icon */
+    .icon {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    /* Heading */
+    .contact-card h4 {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+
+    /* Main text */
+    .main-text {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    /* Description */
+    .contact-card span {
+        font-size: 13px;
+        opacity: 0.75;
+    }
+
+    /* Colors */
+    .blue {
+        color: #38bdf8;
+    }
+
+    .green {
+        color: #22c55e;
+    }
+
+    .purple {
+        color: #a855f7;
+    }
+
+    .teal {
+        color: #14b8a6;
+    }
+
+    .icon img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        border: 2px solid #38bdf8;
+        background: rgba(255,255,255,0.05);
+        margin-bottom: 15px;
+    }
+
+    /* Contact form */
+    /* Section */
+    /* Section */
+    .contact-form-section {
+        padding: 60px 20px;
+        color: #e2e8f0;
+    }
+
+    /* Title */
+    .form-title {
+        font-size: 38px;
+        margin-bottom: 10px;
+        color: #f1f5f9;
+    }
+
+    /* Subtitle */
+    .form-subtitle {
+        color: #94a3b8;
+        margin-bottom: 30px;
+    }
+
+    /* Form Box */
+    .form-box {
+        background: linear-gradient(145deg, #0b1220, #020617);
+        padding: 30px;
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.08);
+        box-shadow: 0 0 30px rgba(59,130,246,0.1);
+    }
+
+    /* Row */
+    .form-row {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    /* Input Group */
+    .input-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+        /* Labels */
+        .input-group label {
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+
+        /* Inputs */
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            background: rgba(15, 23, 42, 0.6);
+            color: #e2e8f0;
+            outline: none;
+            transition: 0.3s;
+        }
+
+            /* Placeholder */
+            .input-group input::placeholder,
+            .input-group textarea::placeholder {
+                color: #64748b;
+            }
+
+            /* Focus Effect */
+            .input-group input:focus,
+            .input-group textarea:focus {
+                border-color: #3b82f6;
+                box-shadow: 0 0 12px rgba(59,130,246,0.6);
+                background: rgba(15, 23, 42, 0.8);
+            }
+
+        /* Textarea height */
+        .input-group textarea {
+            min-height: 150px;
+        }
+
+    /* Button */
+    .send-btn {
+        width: 100%;
+        padding: 16px;
+        border: none;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #1e3a8a, #2563eb);
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        /* Hover */
+        .send-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px rgba(37,99,235,0.6);
+        }
+
+    /* Section */
+    .connect-section {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(145deg, #020617, #0f172a);
+        color: white;
+    }
+
+    /* Title */
+    .connect-title {
+        font-size: 30px;
+        color: #6366f1;
+        margin-bottom: 10px;
+    }
+
+    /* Subtitle */
+    .connect-subtitle {
+        color: #94a3b8;
+        margin-bottom: 40px;
+    }
+
+    /* Icons Layout */
+    .connect-section .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    /* Card */
+    .connect-section .social-card {
+        width: 110px;
+        padding: 20px 10px;
+        border-radius: 15px;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid #334155;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        /* Logo */
+        .connect-section .social-card img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* Text */
+        .connect-section .social-card span {
+            display: block;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+
+        /* Hover */
+        .connect-section .social-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 20px rgba(99,102,241,0.6);
+        }
+
+    /* Thank You */
+    .thanks {
+        margin-top: 40px;
+        color: #a855f7;
+    }
+    .project-date {
+        font-size: 14px;
+        color: #a5b4fc;
+        margin-bottom: 10px;
+    }
+
+    .github {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #8b5cf6, #6366f1);
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        .github:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(139,92,246,0.6);
+        }
+    .Figma {
+        display: inline-block;
+        padding: 10px 18px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #8b5cf6, #6366f1);
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+        .Figma:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(139,92,246,0.6);
+        }
+
+    .theme-btn {
+        position: fixed;
+        top: 90px; /* below navbar */
+        right: 20px;
+        z-index: 9999; /* very high */
+
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        color: white;
+        border: none;
+        padding: 12px 15px;
+        border-radius: 50%;
+        font-size: 18px;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(99,102,241,0.6);
+        transition: 0.3s;
+    }
+
+        .theme-btn:hover {
+            transform: scale(1.1);
+        }
+
+</style>
+
+<!-- ✨ PARTICLES -->
+<div id="particles-js"></div>
+
+
+
+
+<!-- ✅ NAVBAR START -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow">
+    <div class="container">
+
+        <a class="navbar-brand text-gradient fw-bold" href="#home">
+            My Portfolio
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#softskills">Soft Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certificates">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Achievements">Achievements</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- 🌙 TOGGLE -->
+<button id="themeToggle" class="theme-btn">
+    🌙
+</button>
+
+<!-- 🔥 INTRO LANDING PAGE -->
+<style>
+    /* Intro Section */
+    .intro-section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: radial-gradient(circle at top, #0f172a, #020617);
+        color: white;
+    }
+
+    /* Gradient Text */
+    .text-gradient {
+        background: linear-gradient(90deg,#ff9a9e,#fad0c4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Button */
+    .btn-intro {
+        background: linear-gradient(45deg,#ff9a9e,#fad0c4);
+        border: none;
+        color: black;
+        padding: 10px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        .btn-intro:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255,154,158,0.4);
+        }
+
+    /* Animation */
+    .intro-section h1,
+    .intro-section p,
+    .intro-section a {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 1s ease forwards;
+    }
+
+    .intro-section h1 {
+        animation-delay: 0.3s;
+    }
+
+    .intro-section p {
+        animation-delay: 0.6s;
+    }
+
+    .intro-section a {
+        animation-delay: 0.9s;
+    }
+
+    @keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<section id="intro" class="intro-section">
+
+    <div>
+
+        <h5 class="text-gradient mb-3">
+            Welcome to my Digital World 
+        </h5>
+
+        <h1 class="display-2 fw-bold">
+            Hi, I'm <span style="color:#00e0ff;">Prince Kumar</span>
+        </h1>
+
+        <p style="max-width:600px;margin:auto;">
+            Aspiring Software Engineer passionate about cloud computing, Web App development,
+            and building real-world scalable applications.
+        </p>
+
+        <br>
+
+        <a href="#home" class="btn-intro">
+            Explore My Work ↓
+        </a>
+
+    </div>
+
+</section>
+
+<!-- HERO -->
+<!-- HERO -->
+<section id="home" class="container py-5" style="margin-top:100px;">
+    
+    <div class="row align-items-center">
+
+        <div class="col-lg-7">
+
+            <h5 class="text-gradient"><span data-profile="subtitle">Cloud Computing & Web Development Enthusiast</span></h5>
+
+            <!-- 🔥 Typing -->
+            <h1 class="display-3 fw-bold">
+                <span id="typing"></span>
+            </h1>
+
+            <h3 class="text-primary"><span data-profile="title"></span></h3>
+
+            <p><span data-profile="description">Passionate about cloud computing and web development, creating scalable cloud-based solutions and responsive web applications.</span></p>
+
+            <a class="btn btn-gradient me-2" href="#contact">Contact</a>
+            <a class="btn btn-gradient me-2" href="#projects">Projects</a>
+            
+            <a class="btn btn-gradient" href="CV.pdf"  >Resume</a>
+
+        </div>
+
+
+        <div class="col-lg-5 text-center">
+            <img src="/picture/Profile_Image.png" class="profile-picture" />
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container my-5">
+    <h2 class="text-center mb-4 fw-bold">About Me</h2>
+
+    <div class="card text-white shadow-lg p-4"
+         style="border-radius: 20px;
+                background: linear-gradient(135deg, #667eea, pink);">
+
+        <p class="lead text-center" style="line-height: 1.8;">
+            ✨ I am a Computer Science and Engineering student at Lovely Professional University with a strong interest in cloud computing and building scalable digital solutions. I enjoy developing efficient applications using Python, C/C++, JavaScript, ASP.NET Core MVC, and SQL Server, while also exploring AWS services to understand cloud deployment, storage, and system design. Alongside development, I like creating user-friendly interfaces using Figma, combining technical skills with creativity. I am continuously learning and working towards building innovative solutions that solve real-world problems.
+        </p>
+
+    </div>
+</section>
+
+<!-- STATS -->
+<style>
+
+    /* Stats Card */
+
+    .stat-card {
+        background: linear-gradient(145deg,#0f172a,#1e293b);
+        border-radius: 15px;
+        text-align: center;
+        padding: 25px;
+        color: white;
+        transition: 0.4s;
+        border: none;
+    }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(124,124,255,0.4);
+        }
+
+    /* Icon picture */
+
+    .stat-icon {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+
+    .stat-card h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #7c7cff;
+    }
+
+    .stat-card p {
+        font-size: 16px;
+        color: #cbd5f5;
+    }
+
+</style>
+
+
+<section class="container my-5">
+
+    <div class="row g-4">
+
+        <!-- Projects -->
+
+        <div class="col-md-3">
+            <div class="card stat-card">
+
+                
+                <img src="/picture/Project.logo.png"  class="stat-icon">
+
+
+                <h2>4+</h2>
+                <p>Projects</p>
+
+            </div>
+        </div>
+
+        <!-- Certificates -->
+        <div class="col-md-3">
+            <div class="card stat-card">
+
+
+
+                <img src="/picture/Certificate logo.png" class="stat-icon">
+
+
+
+                <h2>10+</h2>
+                <p>Certificates</p>
+
+            </div>
+        </div>
+
+        <!-- HackerRank -->
+
+        <div class="col-md-3">
+            <div class="card stat-card">
+
+                
+                <img src="/picture/HackerRank.png" 
+                     class="stat-icon">
+
+                <h2>3★</h2>
+                <p>HackerRank</p>
+
+            </div>
+        </div>
+
+        <!-- Graduation -->
+
+        <div class="col-md-3">
+            <div class="card stat-card">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135810.png"
+                     class="stat-icon">
+
+                <h2>2027</h2>
+                <p>Graduation</p>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<style>
+
+    /* Section */
+    .skills-section {
+        background: linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+        padding: 60px 0;
+        margin-bottom: 50px; /* 👈 ADD HERE */
+    }
+
+    /* Title */
+    .section-title {
+        color: #7c7cff;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    /* Skill Card */
+    .skill-box {
+        background: rgba(15, 23, 42, 0.8);
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+        transition: 0.4s;
+        border: 1px solid rgba(124,124,255,0.2);
+    }
+
+        /* Hover Effect */
+        .skill-box:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(124,124,255,0.5);
+        }
+
+        /* Logo */
+        .skill-box img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+
+    /* Name */
+    .skill-name {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    /* Percentage */
+    .skill-percent {
+        font-size: 14px;
+        
+    }
+
+    body {
+        background: #0f172a;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Section */
+    .contact {
+        text-align: center;
+        color: yellowgreen;
+        padding: 80px 20px;
+    }
+
+        /* Title */
+        .contact h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+    /* Bigger Card */
+    .contact-box {
+        max-width: 700px; /* increased width */
+        margin: auto;
+        padding: 40px; /* more spacing */
+        border-radius: 20px;
+        background: #1e293b;
+        box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    }
+
+        /* Inputs */
+        .contact-box input,
+        .contact-box textarea {
+            width: 100%;
+            margin: 15px 0;
+            padding: 15px; /* bigger input */
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        /* Textarea height */
+        .contact-box textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        /* Button */
+        .contact-box button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #8b5cf6, #6366f1);
+            color: wheat;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            /* Hover Effect */
+            .contact-box button:hover {
+                transform: scale(1.03);
+                box-shadow: 0 0 15px #8b5cf6;
+            }
+
+</style>
+
+
+<section id="skills" class="skills-section">
+    <div class="container">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- HTML -->
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-percent">70%</div>
+                </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-percent">70%</div>
+                </div>
+            </div>
+
+            <!-- JS -->
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-percent">65%</div>
+                </div>
+            </div>
+
+            <!-- .NET -->
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_.NET_logo.png">
+                    <div class="skill-name">ASP.NET</div>
+                    <div class="skill-percent">75%</div>
+                </div>
+            </div>
+
+            <!-- Linux -->
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="/picture/Linux.png" />
+                    <div class="skill-name">Linux</div>
+                    <div class="skill-percent">70%</div>
+                </div>
+            </div>
+
+            <!-- Linux -->
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="/picture/gitHub logo.png" />
+                    <div class="skill-name">GitHub</div>
+                    <div class="skill-percent">70%</div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="/picture/aws.png" />
+                    <div class="skill-name">AWS</div>
+                    <div class="skill-percent">80%</div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="/picture/Azure Logo.png" />
+                    <div class="skill-name">Azure</div>
+                    <div class="skill-percent">80%</div>
+                </div>
+            </div>
+
+            <!-- C++ -->
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png">
+                    <div class="skill-name">C++</div>
+                    <div class="skill-percent">75%</div>
+                </div>
+            </div>
+
+            <!-- Python -->
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-percent">75%</div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="/picture/MySQL logo.png" />
+                    <div class="skill-name">SQL</div>
+                    <div class="skill-percent">70%</div>
+                </div>
+            </div>
+
+            <!-- Figma-->
+            <div class="col-md-2 col-6">
+                <div class="skill-box">
+                    <img src="/picture/Figma.png" />
+                    <div class="skill-name">Figma</div>
+                    <div class="skill-percent">80%</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+
+    /* 🌌 Section Background */
+    .soft-section {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffdde1);
+        padding: 70px 0;
+    }
+
+    /* Title */
+    .section-title {
+        color: #7c7cff;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+        letter-spacing: 1px;
+    }
+
+    /* 🧊 Glass Card */
+    .soft-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        border-radius: 20px;
+        padding: 30px;
+        color: black;
+        text-align: center;
+        transition: 0.4s;
+        border: 1px solid rgba(255,255,255,0.1);
+        height: 100%;
+    }
+
+        /* Hover Effect */
+        .soft-card:hover {
+            transform: translateY(-12px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(124,124,255,0.5);
+        }
+
+    /* Icon */
+    .soft-icon {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    /* Title */
+    .soft-title {
+        color: #7c7cff;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    /* List */
+    .soft-list {
+        list-style: none;
+        padding: 0;
+    }
+
+        .soft-list li {
+            padding: 8px 0;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            transition: 0.3s;
+        }
+
+            /* Hover list item */
+            .soft-list li:hover {
+                color: #00e0ff;
+                transform: translateX(5px);
+            }
+
+</style>
+
+
+<section id="softskills" class="soft-section">
+
+    <div class="container">
+
+        <h2 class="section-title">Soft Skills</h2>
+
+        <div class="row g-4">
+
+            <!-- Communication -->
+            <div class="col-md-4">
+                <div class="soft-card">
+                    <div class="soft-icon">💬</div>
+                    <h5 class="soft-title">Communication & Collaboration</h5>
+
+                    <ul class="soft-list">
+                        <li>✔ Communication</li>
+                        <li>✔ Teamwork</li>
+                        <li>✔ Presentation Skills</li>
+                        <li>✔ Stakeholder Management</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Problem Solving -->
+            <div class="col-md-4">
+                <div class="soft-card">
+                    <div class="soft-icon">🧠</div>
+                    <h5 class="soft-title">Problem Solving & Leadership</h5>
+
+                    <ul class="soft-list">
+                        <li>✔ Problem Solving</li>
+                        <li>✔ Critical Thinking</li>
+                        <li>✔ Leadership</li>
+                        <li>✔ Strategic Planning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Professional -->
+            <div class="col-md-4">
+                <div class="soft-card">
+                    <div class="soft-icon">🚀</div>
+                    <h5 class="soft-title">Professional Development</h5>
+
+                    <ul class="soft-list">
+                        <li>✔ Time Management</li>
+                        <li>✔ Adaptability</li>
+                        <li>✔ Continuous Learning</li>
+                        <li>✔ Work Ethics</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-section container">
+    <section id="projects" class="projects-section container">
+
+    <h2 class="title">Projects</h2>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+            <div class="project-card">
+
+                <img src="/picture/mobile banking.png" alt="project">
+
+                <!-- 📅 Date -->
+                <p class="project-date">📅 June 2025 – July 2025</p>
+
+                <h3>Smart Mobile Banking App Prototype</h3>
+
+                <p>
+                    Created a mobile banking app prototype focused on improving user experience
+                    and security by applying design thinking methods. Built interactive designs
+                    and wireframes to enhance usability and efficiency.
+                </p>
+
+                <div class="tags">
+                    <span>Figma</span>
+                    <span>Balsamiq</span>
+                    <span>Draw.io</span>
+                    <span>Ideation</span>
+                    <span>Wireframing</span>
+                </div>
+
+                <div class="buttons">
+                    <!-- 🔗 GitHub Redirect -->
+                    <a href="https://www.figma.com/proto/7zRaQEeVwSX37R4BMMGUjV/Untitled?node-id=425-1399&t=jvG32nyhJ64LYaoT-1"
+                        
+                       class="Figma">
+                        Figma
+                    </a>
+                </div>
+
+            </div>
+
+        <!-- Project 2 -->
+            <div class="project-card">
+
+                <img src="/picture/AI chatbot.png" alt="project">
+
+                <!-- 📅 Month & Year -->
+                <p style="font-size:13px; opacity:0.7;">Apr 2025 – May 2025</p>
+
+                <h3>Chatbot for AI Resume Builder</h3>
+
+                <p>
+                    Developed an AI-powered resume builder with API integration to automate content generation and improve accuracy using HTML, CSS, and JavaScript.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>API</span>
+                    <span>GitHub</span>
+                </div>
+
+                <div class="buttons">
+                    <!-- 🔗 GitHub Redirect -->
+                    <a href="https://github.com/Kumar-Prince-Singh/Chatbot-for-AI-resume-creation"  >
+                        <button class="github">GitHub</button>
+                    </a>
+                </div>
+
+            </div>
+
+        <!-- Project 3 -->
+            <div class="project-card">
+
+                <img src="/picture/playlistwebapplication.png" alt="project">
+
+                <h3>Playlist Web Application</h3>
+
+                <!-- 📅 Date -->
+                <p class="project-date">📅 Jan 2026 – Feb 2026</p>
+
+                <p>
+                    Developed a web-based music system with separate roles for admin and users,
+                    ensuring secure login and access control. Designed and implemented features
+                    to manage songs and users using ASP.NET Core MVC and SQL Server.
+                </p>
+
+                <div class="tags">
+                    <span>ASP.NET Core MVC</span>
+                    <span>C#</span>
+                    <span>Entity Framework Core</span>
+                    <span>SQL Server</span>
+                    <span>Razor Views</span>
+                    <span>Bootstrap</span>
+                </div>
+
+                <div class="buttons">
+                    <a href="https://github.com/Kumar-Prince-Singh/PlaylistWebApplication3"
+                        
+                       class="github">
+                        GitHub
+                    </a>
+                </div>
+
+            </div>
+
+</section>
+
+<style>
+
+    /* 🌌 Section Background */
+    .cert-section {
+        background: linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+        padding: 70px 0;
+    }
+
+    /* Title */
+    .section-title {
+        color: #7c7cff;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    /* 🧊 Glass Card */
+    .cert-card {
+        border-radius: 20px;
+        overflow: hidden;
+        color: white;
+        transition: 0.4s;
+        height: 100%;
+        backdrop-filter: blur(10px);
+    }
+
+    /* 🎨 Different Gradient Themes */
+    .cert1 {
+        background: linear-gradient(135deg,#1e3c72,#2a5298);
+    }
+
+    .cert2 {
+        background: linear-gradient(135deg,#42275a,#734b6d);
+    }
+
+    .cert3 {
+        background: linear-gradient(135deg,#134e5e,#71b280);
+    }
+
+    .cert4 {
+        background: linear-gradient(135deg, #ff7e00, #ffb347);
+    }
+
+    
+    .cert5 {
+        background: linear-gradient(135deg, #ff6a88, #ff99ac);
+    }
+
+   
+    .cert6 {
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+    }
+
+    /* Hover */
+    .cert-card:hover {
+        transform: translateY(-12px) scale(1.03);
+        box-shadow: 0 20px 40px rgba(124,124,255,0.5);
+    }
+
+    /* picture */
+    .cert-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* Body */
+    .cert-body {
+        padding: 20px;
+    }
+
+    /* Title */
+    .cert-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    /* Org */
+    .cert-org {
+        font-size: 14px;
+        opacity: 0.8;
+        margin-bottom: 10px;
+    }
+
+    /* Info */
+    .cert-info {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    /* Button */
+    .view-btn {
+        margin-top: 10px;
+        display: inline-block;
+        padding: 8px 18px;
+        border-radius: 8px;
+        background: rgba(255,255,255,0.2);
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        .view-btn:hover {
+            background: white;
+            color: black;
+        }
+
+
+
+</style>
+
+
+<section id="certificates" class="cert-section">
+
+    <div class="container">
+
+        <h2 class="section-title">Certificates</h2>
+
+        <div class="row g-4">
+
+            <!-- Cert 1 -->
+            <div class="col-md-4">
+                <div class="cert-card cert1">
+
+                    <img src="/picture/NPTEL-CERT.png" class="cert-img">
+
+                    <div class="cert-body">
+
+                        <div class="cert-title">Cloud Computing by NPTEL</div>
+                        <div class="cert-org">NPTEL</div>
+
+                        <p class="cert-info">📅 May 2025</p>
+                        
+
+                        <p class="cert-info">
+                            Completed Cloud Computing certification from NPTEL, gaining knowledge of AWS, Azure, distributed systems, and cloud architecture.
+                        </p>
+
+                        <a href="/picture/NPTEL-CERT.png" target="_blank" class="view-btn">
+                            View
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cert 2 -->
+            <div class="col-md-4">
+                <div class="cert-card cert2">
+
+                    <img src="/picture/Freecodecamp.png" class="cert-img">
+
+                    <div class="cert-body">
+
+                        <div class="cert-title">Responsive Web Design</div>
+                        <div class="cert-org">FreeCodeCamp</div>
+
+                        <p class="cert-info">📅 Nov 2025</p>
+                        
+
+                        <p class="cert-info">
+                            Gained strong skills in HTML, CSS, and responsive web design by building modern, user-friendly websites with good UI/UX practices.
+                        </p>
+
+                        <a href="/picture/Freecodecamp.png" target="_blank" class="view-btn">
+                            View
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cert 3 -->
+            <div class="col-md-4">
+                <div class="cert-card cert3">
+
+                    <img src="/picture/thingQbator.png" class="cert-img">
+
+                    <div class="cert-body">
+
+                        <div class="cert-title">Introduction to Docker and Kubernetes</div>
+                        <div class="cert-org">nasscom foundation</div>
+
+                        <p class="cert-info">📅 Oct 2025</p>
+                        
+
+                        <p class="cert-info">
+                            Gained foundational knowledge of Docker and Kubernetes, focusing on containerization and orchestration of modern applications.
+                        </p>
+
+                        <a href="/picture/thingQbator.png" target="_blank" class="view-btn">
+                            View
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cert-card cert4">
+
+                    
+                    <img src="/picture/Design thinking figma.png" class="cert-img">
+
+                    <div class="cert-body">
+
+                        <div class="cert-title">Design Thinking & Figma</div>
+                        <div class="cert-org">Centre for Professional Enhancement(LPU)</div>
+
+                        <p class="cert-info">📅 July 2025</p>
+                        
+
+                        <p class="cert-info">
+                            AWS • Azure • Cloud • Distributed Systems
+                        </p>
+
+                        <a href="/picture/Design%20thinking%20figma.png" target="_blank" class="view-btn">
+                            View
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cert-card cert5">
+
+                    
+                    <img src="/picture/SFJ.png" class="cert-img">
+
+                    <div class="cert-body">
+
+                        <div class="cert-title">GEN AI NASSCOM</div>
+                        <div class="cert-org">SFJ</div>
+
+                        <p class="cert-info">📅 Feb 2026</p>
+                        
+
+                        <p class="cert-info">
+                            Completed a Gen AI program under NASSCOM, gaining practical knowledge of artificial intelligence and industry-focused applications.
+                        </p>
+
+                        <a href="/picture/SFJ.png" target="_blank" class="view-btn">
+                            View
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cert-card cert6">
+
+                    
+                    <img src="/picture/Networking.png" class="cert-img">
+
+                    <div class="cert-body">
+
+                        <div class="cert-title">Computer Networking</div>
+                        <div class="cert-org">Coursera</div>
+                        
+
+                        <p class="cert-info">📅 Sep 2024</p>
+                        
+
+                        <p class="cert-info">
+                            Gained fundamental knowledge of computer networking concepts, including protocols, data transmission, and internet architecture through a Google-authorized course.
+                        </p>
+
+                        <a href="/picture/Networking.png" target="_blank" class="view-btn">
+                            View
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <section id="Achievements" class="Achievements-section">
+
+<section class="achievements container">
+
+    <p class="subtitle">RECOGNITION</p>
+    <h2 class="title">Achievements</h2>
+
+    <div class="achievement-grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="icon">💻</div>
+                <div>
+                    <h3>7 Star Achieved</h3>
+                    <p>HackerRank</p>
+                </div>
+                <span class="badge">Achievement</span>
+            </div>
+
+            <div class="date">📅 July 2025</div>
+
+            <p class="desc">
+                Earned 7-star rating in Python, Java, and C++ on HackerRank.
+            </p>
+
+            <div class="skills-box">
+                <div><b> ⭐⭐⭐</b><span>Python</span></div>
+                <div><b> ⭐⭐</b><span>Java</span></div>
+                <div><b> ⭐⭐</b><span>C++</span></div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="icon">🚀</div>
+                <div>
+                    <h3>Hackathon Participant</h3>
+                    <p>CODE OFF DUTY</p>
+                </div>
+                <span class="badge">Achievement</span>
+            </div>
+
+            <div class="date">📅 March 2024</div>
+
+            <p class="desc">
+                Participated in a web hackathon, showcasing skills in problem-solving, teamwork, and innovative web development.
+            </p>
+
+            <div class="skills-box orange">
+                <div><b>A Web Hackathon</b><span>Event</span></div>
+                <div><b>Blockse</b><span>Partner</span></div>
+                <div><b>Team 5</b><span>Team</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section container">
+<section id="contact" class="contact-section container">
+
+    
+    <h2 class="title">Get In Touch</h2>
+
+    <div class="contact-grid">
+
+        <!-- Email -->
+        <div class="contact-card blue">
+            <div class="icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">
+            </div>
+
+            <h4>Email Me</h4>
+            <p class="main-text">pk634643@gmail.com</p>
+            <span>I usually reply within a few hours. Feel free to reach out anytime.</span>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-card green">
+            <div class="icon">📞</div>
+            <h4>Call / WhatsApp</h4>
+            <p class="main-text">+91-6201561754</p>
+            <span>Available for quick discussions, collaborations, or project queries.</span>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-card purple">
+            <div class="icon">📍</div>
+            <h4>Location</h4>
+            <p class="main-text">Muzaffarpur, Bihar</p>
+            <span>Open to remote opportunities and global collaborations.</span>
+        </div>
+
+        <!-- Availability -->
+        <div class="contact-card teal">
+            <div class="icon">⏰</div>
+            <h4>Availability</h4>
+            <p class="main-text">Open for Work</p>
+            <span>Currently available for freelance, internships, and full-time roles.</span>
+        </div>
+
+    </div>
+
+</section>
+
+   
+
+
+    <!-- Contact Form -->
+<section class="contact-form-section container">
+
+    <h2 class="form-title">Send me a message</h2>
+    <p class="form-subtitle">
+        Please enter your details below and I'll get back to you soon.
+    </p>
+
+    <div class="form-box">
+
+        <form>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Your Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Subject</label>
+                <input type="text" placeholder="Enter subject">
+            </div>
+
+            <div class="input-group">
+                <label>Message</label>
+                <textarea placeholder="Enter your message" required></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">
+                ✈️ SEND MESSAGE
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- SOCIAL -->
+<section class="connect-section">
+
+    <h2 class="connect-title">Available for Immediate Hire</h2>
+    <p class="connect-subtitle">
+        Cloud Computing • Web Development 
+    </p>
+
+    <div class="social-icons">
+
+            <a href="https://www.linkedin.com/in/-kumar-prince/"   class="social-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+            <span>LinkedIn</span>
+        </a>
+
+                <a href="https://github.com/Kumar-Prince-Singh"   class="social-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png">
+            <span>GitHub</span>
+        </a>
+
+       
+
+            <a href="https://x.com/PrinceK80524898"   class="social-card">
+            <img src="/picture/X.png">
+            <span>X </span>
+        </a>
+
+    </div>
+
+    <h3 class="thanks">Thank You 🙏</h3>
+
+</section>
+
+<!-- 🔥 Typing Script -->
+<script>
+    const text = "Prince Kumar ";
+    let i = 0;
+
+    function typeEffect() {
+        if (i < text.length) {
+            document.getElementById("typing").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeEffect, 80);
+        }
+    }
+    window.onload = typeEffect;
+</script>
+
+<!-- 🌙 Toggle -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("themeToggle");
+
+        btn.addEventListener("click", function () {
+            document.body.classList.toggle("light-mode");
+        });
+    });
+</script>
+
+<!-- ✨ Particles -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60 },
+        "color": { "value": "#6c63ff" },
+        "shape": { "type": "circle" },
+        "size": { "value": 3 },
+        "move": { "enable": true, "speed": 2 }
+      }
+    });
+</script>
+
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
